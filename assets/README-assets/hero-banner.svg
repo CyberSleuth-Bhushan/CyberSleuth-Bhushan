@@ -79,7 +79,7 @@
   <!-- GitHub Pro Badge Top Right -->
   <g transform="translate(780, 10)">
     <rect width="78" height="18" rx="9" fill="#1f6feb" fill-opacity="0.2" stroke="#388bfd" stroke-width="0.8"/>
-    <text x="39" y="13" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.5">★ PRO USER</text>
+    <text x="39" y="13" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.5">&#9733; PRO USER</text>
   </g>
 
   <!-- Subtitle / Status Prefix -->
@@ -98,7 +98,7 @@
 
   <!-- Tagline -->
   <text x="440" y="168" text-anchor="middle" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="1.2">
-    Engineering Student &bull; Full-Stack Developer &bull; AI / ML &bull; IoT &bull; Cyber Sleuth
+    Engineering Student &#8226; Full-Stack Developer &#8226; AI / ML &#8226; IoT &#8226; Cyber Sleuth
   </text>
 
   <!-- Category Pills / Badges -->
@@ -106,19 +106,19 @@
     <!-- Pill 1: TGPCET -->
     <g transform="translate(-250, 0)">
       <rect x="0" y="0" width="150" height="26" rx="13" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="75" y="17" text-anchor="middle" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">🎓 IT @ TGPCET</text>
+      <text x="75" y="17" text-anchor="middle" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">&#127891; IT @ TGPCET</text>
     </g>
 
     <!-- Pill 2: Web & AI -->
     <g transform="translate(-85, 0)">
       <rect x="0" y="0" width="170" height="26" rx="13" fill="#161b22" stroke="#388bfd" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="85" y="17" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">⚡ Full-Stack &amp; AI Apps</text>
+      <text x="85" y="17" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">&#9889; Full-Stack &amp; AI Apps</text>
     </g>
 
     <!-- Pill 3: Location -->
     <g transform="translate(100, 0)">
       <rect x="0" y="0" width="150" height="26" rx="13" fill="#161b22" stroke="#bc8cff" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="75" y="17" text-anchor="middle" fill="#d2a8ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">📍 Nagpur, India</text>
+      <text x="75" y="17" text-anchor="middle" fill="#d2a8ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">&#128205; Nagpur, India</text>
     </g>
   </g>
 
