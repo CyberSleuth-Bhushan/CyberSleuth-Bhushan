@@ -9,7 +9,7 @@
 
 <!-- HERO BANNER -->
 <a href="https://github.com/CyberSleuth-Bhushan">
-  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/hero-banner.svg" alt="Bhushan Barun Mallick — Engineering Student · Full-Stack Developer · AI/ML · IoT · Cyber Sleuth" width="100%"/>
+  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/hero-banner.svg?v=3" alt="Bhushan Barun Mallick — Engineering Student · Full-Stack Developer · AI/ML · IoT · Cyber Sleuth" width="100%"/>
 </a>
 
 <br/><br/>
@@ -36,7 +36,7 @@
 </div>
 
 <!-- DIVIDER -->
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg?v=3" alt="" width="100%"/>
 
 <!-- ==================== ABOUT ME ==================== -->
 
@@ -83,7 +83,7 @@ status: 🟢 Open for Opportunities & Collaborations
 </table>
 
 <!-- DIVIDER -->
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg?v=3" alt="" width="100%"/>
 
 <!-- ==================== CURRENTLY ==================== -->
 
@@ -97,7 +97,7 @@ status: 🟢 Open for Opportunities & Collaborations
 - 💬 &nbsp;**Let's Talk:** Web Development, Python, IoT microcontrollers, JavaScript tooling, or tech innovation.
 
 <!-- DIVIDER -->
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg?v=3" alt="" width="100%"/>
 
 <!-- ==================== TECH STACK ==================== -->
 
@@ -139,7 +139,7 @@ status: 🟢 Open for Opportunities & Collaborations
 </div>
 
 <!-- DIVIDER -->
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg?v=3" alt="" width="100%"/>
 
 <!-- ==================== FEATURED PROJECTS ==================== -->
 
@@ -176,7 +176,7 @@ status: 🟢 Open for Opportunities & Collaborations
 </div>
 
 <!-- DIVIDER -->
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg?v=3" alt="" width="100%"/>
 
 <!-- ==================== GITHUB STATISTICS ==================== -->
 
@@ -195,7 +195,7 @@ status: 🟢 Open for Opportunities & Collaborations
 </div>
 
 <!-- DIVIDER -->
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg?v=3" alt="" width="100%"/>
 
 <!-- ==================== CONTRIBUTION ACTIVITY & SNAKE ==================== -->
 
@@ -220,7 +220,7 @@ status: 🟢 Open for Opportunities & Collaborations
 </div>
 
 <!-- DIVIDER -->
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg?v=3" alt="" width="100%"/>
 
 <!-- ==================== CODING PROFILES ==================== -->
 
@@ -235,7 +235,7 @@ status: 🟢 Open for Opportunities & Collaborations
 </div>
 
 <!-- DIVIDER -->
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/divider.svg?v=3" alt="" width="100%"/>
 
 <!-- ==================== CONNECT ==================== -->
 
@@ -257,7 +257,7 @@ status: 🟢 Open for Opportunities & Collaborations
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/footer.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/footer.svg?v=3" alt="" width="100%"/>
 
 <br/>
 
