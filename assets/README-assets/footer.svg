@@ -1,20 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 60" width="850" height="60">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 70" width="880" height="70">
   <defs>
-    <linearGradient id="footGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="transparent"/>
-      <stop offset="20%" stop-color="#58a6ff" stop-opacity="0.3"/>
-      <stop offset="50%" stop-color="#bc8cff" stop-opacity="0.5"/>
-      <stop offset="80%" stop-color="#58a6ff" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="transparent"/>
+    <linearGradient id="footLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#388bfd" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#bc8cff" stop-opacity="0.7"/>
+      <stop offset="80%" stop-color="#388bfd" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="footText" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#484f58"/>
-      <stop offset="50%" stop-color="#8b949e"/>
-      <stop offset="100%" stop-color="#484f58"/>
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#d2a8ff"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
     </linearGradient>
   </defs>
-  <rect x="0" y="8" width="850" height="1.5" rx="1" fill="url(#footGrad)"/>
-  <text x="425" y="40" text-anchor="middle" fill="url(#footText)" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="400" letter-spacing="1.5">
-    BUILDING, LEARNING, AND SHIPPING — ONE COMMIT AT A TIME
-  </text>
+
+  <!-- Top Line -->
+  <rect x="30" y="10" width="820" height="1.5" rx="0.75" fill="url(#footLine)"/>
+
+  <!-- Code Tagline Graphic -->
+  <g transform="translate(440, 42)">
+    <text x="0" y="0" text-anchor="middle" fill="url(#footText)" font-family="'Fira Code', 'Courier New', monospace" font-size="12" font-weight="600" letter-spacing="2">
+      &lt; INNOVATE &bull; BUILD &bull; SCALE /&gt;
+    </text>
+    <text x="0" y="18" text-anchor="middle" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="400" letter-spacing="1">
+      DESIGNED WITH PASSION &amp; CODE FOR BHUSHAN BARUN MALLICK
+    </text>
+  </g>
 </svg>

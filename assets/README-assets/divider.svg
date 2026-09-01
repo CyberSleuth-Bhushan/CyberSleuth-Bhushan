@@ -1,12 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 8" width="850" height="8">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 16" width="880" height="16">
   <defs>
-    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="transparent"/>
-      <stop offset="15%" stop-color="#58a6ff" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#bc8cff" stop-opacity="0.6"/>
-      <stop offset="85%" stop-color="#58a6ff" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="transparent"/>
+    <linearGradient id="divLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#388bfd" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#bc8cff" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#388bfd" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
     </linearGradient>
+    <radialGradient id="centerDiamondGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bc8cff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect x="0" y="3" width="850" height="2" rx="1" fill="url(#divGrad)"/>
+
+  <!-- Line -->
+  <rect x="20" y="7" width="840" height="1.5" rx="0.75" fill="url(#divLine)"/>
+  
+  <!-- Center Glow & Diamond -->
+  <circle cx="440" cy="8" r="8" fill="url(#centerDiamondGlow)"/>
+  <rect x="436.5" y="4.5" width="7" height="7" rx="1.5" transform="rotate(45 440 8)" fill="#58a6ff"/>
 </svg>
