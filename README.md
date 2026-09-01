@@ -148,21 +148,21 @@ status: 🟢 Open for Opportunities & Collaborations
 <div align="center">
 
 <a href="https://github.com/CyberSleuth-Bhushan/AquaSentinel">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=CyberSleuth-Bhushan&repo=AquaSentinel&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=bc8cff&text_color=c9d1d9" alt="AquaSentinel"/>
+  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/pin-AquaSentinel.svg" alt="AquaSentinel"/>
 </a>
 &nbsp;
 <a href="https://github.com/CyberSleuth-Bhushan/Honest-Weather">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=CyberSleuth-Bhushan&repo=Honest-Weather&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=bc8cff&text_color=c9d1d9" alt="Honest Weather"/>
+  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/pin-Honest-Weather.svg" alt="Honest Weather"/>
 </a>
 
 <br/>
 
 <a href="https://github.com/CyberSleuth-Bhushan/Ultimate-Password-Generator">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=CyberSleuth-Bhushan&repo=Ultimate-Password-Generator&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=bc8cff&text_color=c9d1d9" alt="Ultimate Password Generator"/>
+  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/pin-Ultimate-Password-Generator.svg" alt="Ultimate Password Generator"/>
 </a>
 &nbsp;
 <a href="https://github.com/CyberSleuth-Bhushan/IT-Invitations-tgp">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=CyberSleuth-Bhushan&repo=IT-Invitations-tgp&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=bc8cff&text_color=c9d1d9" alt="IT Invitations TGP"/>
+  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/pin-IT-Invitations-tgp.svg" alt="IT Invitations TGP"/>
 </a>
 
 </div>
@@ -184,13 +184,13 @@ status: 🟢 Open for Opportunities & Collaborations
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=CyberSleuth-Bhushan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=bc8cff&text_color=c9d1d9&ring_color=58a6ff&count_private=true" alt="GitHub Stats" height="175"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/github-stats.svg" alt="GitHub Stats" height="175"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CyberSleuth-Bhushan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" alt="Top Languages" height="175"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/top-langs.svg" alt="Top Languages" height="175"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=CyberSleuth-Bhushan&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=BC8CFF&currStreakLabel=58A6FF&sideLabels=C9D1D9&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9" alt="GitHub Streak" width="530"/>
+<img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/streak-stats.svg" alt="GitHub Streak" width="530"/>
 
 </div>
 
@@ -203,9 +203,9 @@ status: 🟢 Open for Opportunities & Collaborations
 
 <div align="center">
 
-<!-- LIVE ACTIVITY GRAPH -->
+<!-- ACTIVITY GRAPH (static from output-stats branch) -->
 <a href="https://github.com/CyberSleuth-Bhushan">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=CyberSleuth-Bhushan&theme=tokyo-night&bg_color=0d1117&color=58a6ff&line=58a6ff&point=bc8cff&area=true&hide_border=true" alt="Bhushan's GitHub Activity Graph" width="100%"/>
+  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/activity-graph.svg" alt="Bhushan's GitHub Activity Graph" width="100%"/>
 </a>
 
 <br/><br/>

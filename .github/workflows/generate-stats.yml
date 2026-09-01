@@ -1,0 +1,74 @@
+name: Generate GitHub Stats Cards
+
+on:
+  schedule:
+    # Run every 6 hours to keep stats fresh
+    - cron: "30 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-stats:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate Stats SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: CyberSleuth-Bhushan
+        run: |
+          mkdir -p stats
+
+          # GitHub Stats Card
+          curl -sSf -o stats/github-stats.svg \
+            "https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=bc8cff&text_color=c9d1d9&ring_color=58a6ff&count_private=true" || true
+
+          # Top Languages Card
+          curl -sSf -o stats/top-langs.svg \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" || true
+
+          # Streak Stats
+          curl -sSf -o stats/streak-stats.svg \
+            "https://streak-stats.demolab.com?user=${USERNAME}&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=BC8CFF&currStreakLabel=58A6FF&sideLabels=C9D1D9&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9" || true
+
+          # Activity Graph
+          curl -sSf -o stats/activity-graph.svg \
+            "https://github-readme-activity-graph.vercel.app/graph?username=${USERNAME}&theme=tokyo-night&bg_color=0d1117&color=58a6ff&line=58a6ff&point=bc8cff&area=true&hide_border=true" || true
+
+          # Pin Cards for Featured Projects
+          for REPO in AquaSentinel Honest-Weather Ultimate-Password-Generator IT-Invitations-tgp; do
+            curl -sSf -o "stats/pin-${REPO}.svg" \
+              "https://github-readme-stats.vercel.app/api/pin/?username=${USERNAME}&repo=${REPO}&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=bc8cff&text_color=c9d1d9" || true
+          done
+
+          # Check which files were actually generated (non-empty SVG)
+          for f in stats/*.svg; do
+            if [ -s "$f" ] && head -1 "$f" | grep -q '<svg'; then
+              echo "✅ Generated: $f ($(wc -c < "$f") bytes)"
+            else
+              echo "⚠️  Failed or empty: $f"
+              rm -f "$f"
+            fi
+          done
+
+      - name: Push Stats to Output Branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output-stats
+          build_dir: stats
+          commit_message: "📊 Auto-generate GitHub stats cards [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
