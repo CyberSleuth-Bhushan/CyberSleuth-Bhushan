@@ -145,27 +145,68 @@ status: 🟢 Open for Opportunities & Collaborations
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Card%20File%20Box.png" width="28"/> &nbsp;Featured Projects
 
-<div align="center">
-
-<a href="https://github.com/CyberSleuth-Bhushan/AquaSentinel">
-  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/pin-AquaSentinel.svg" alt="AquaSentinel"/>
-</a>
-&nbsp;
-<a href="https://github.com/CyberSleuth-Bhushan/Honest-Weather">
-  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/pin-Honest-Weather.svg" alt="Honest Weather"/>
-</a>
-
-<br/>
-
-<a href="https://github.com/CyberSleuth-Bhushan/Ultimate-Password-Generator">
-  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/pin-Ultimate-Password-Generator.svg" alt="Ultimate Password Generator"/>
-</a>
-&nbsp;
-<a href="https://github.com/CyberSleuth-Bhushan/IT-Invitations-tgp">
-  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/output-stats/pin-IT-Invitations-tgp.svg" alt="IT Invitations TGP"/>
-</a>
-
-</div>
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+<h3 align="center">🌊 AquaSentinel</h3>
+<p align="center">Automated IoT water quality monitoring & safety management system using ESP8266 & sensors.</p>
+<p align="center">
+  <a href="https://github.com/CyberSleuth-Bhushan/AquaSentinel">
+    <img src="https://img.shields.io/badge/View_Repo_%E2%86%92-58a6ff?style=for-the-badge&logo=github&logoColor=fff&labelColor=0d1117" alt="View Repo"/>
+  </a>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/CyberSleuth-Bhushan/AquaSentinel?style=flat-square&color=58a6ff&labelColor=0d1117" alt="Language"/>
+  <img src="https://img.shields.io/github/stars/CyberSleuth-Bhushan/AquaSentinel?style=flat-square&color=bc8cff&labelColor=0d1117" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/CyberSleuth-Bhushan/AquaSentinel?style=flat-square&color=3fb950&labelColor=0d1117" alt="Forks"/>
+</p>
+</td>
+<td width="50%" valign="top">
+<h3 align="center">🌤️ Honest Weather</h3>
+<p align="center">A clean, modern weather app delivering real-time forecasts with a beautiful UI.</p>
+<p align="center">
+  <a href="https://github.com/CyberSleuth-Bhushan/Honest-Weather">
+    <img src="https://img.shields.io/badge/View_Repo_%E2%86%92-58a6ff?style=for-the-badge&logo=github&logoColor=fff&labelColor=0d1117" alt="View Repo"/>
+  </a>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/CyberSleuth-Bhushan/Honest-Weather?style=flat-square&color=58a6ff&labelColor=0d1117" alt="Language"/>
+  <img src="https://img.shields.io/github/stars/CyberSleuth-Bhushan/Honest-Weather?style=flat-square&color=bc8cff&labelColor=0d1117" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/CyberSleuth-Bhushan/Honest-Weather?style=flat-square&color=3fb950&labelColor=0d1117" alt="Forks"/>
+</p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3 align="center">🔐 Ultimate Password Generator</h3>
+<p align="center">A secure password generator with customizable strength options and clipboard copy.</p>
+<p align="center">
+  <a href="https://github.com/CyberSleuth-Bhushan/Ultimate-Password-Generator">
+    <img src="https://img.shields.io/badge/View_Repo_%E2%86%92-58a6ff?style=for-the-badge&logo=github&logoColor=fff&labelColor=0d1117" alt="View Repo"/>
+  </a>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/CyberSleuth-Bhushan/Ultimate-Password-Generator?style=flat-square&color=58a6ff&labelColor=0d1117" alt="Language"/>
+  <img src="https://img.shields.io/github/stars/CyberSleuth-Bhushan/Ultimate-Password-Generator?style=flat-square&color=bc8cff&labelColor=0d1117" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/CyberSleuth-Bhushan/Ultimate-Password-Generator?style=flat-square&color=3fb950&labelColor=0d1117" alt="Forks"/>
+</p>
+</td>
+<td width="50%" valign="top">
+<h3 align="center">🎓 IT Invitations TGP</h3>
+<p align="center">Digital invitation platform for college events with custom themes and RSVP tracking.</p>
+<p align="center">
+  <a href="https://github.com/CyberSleuth-Bhushan/IT-Invitations-tgp">
+    <img src="https://img.shields.io/badge/View_Repo_%E2%86%92-58a6ff?style=for-the-badge&logo=github&logoColor=fff&labelColor=0d1117" alt="View Repo"/>
+  </a>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/CyberSleuth-Bhushan/IT-Invitations-tgp?style=flat-square&color=58a6ff&labelColor=0d1117" alt="Language"/>
+  <img src="https://img.shields.io/github/stars/CyberSleuth-Bhushan/IT-Invitations-tgp?style=flat-square&color=bc8cff&labelColor=0d1117" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/CyberSleuth-Bhushan/IT-Invitations-tgp?style=flat-square&color=3fb950&labelColor=0d1117" alt="Forks"/>
+</p>
+</td>
+</tr>
+</table>
 
 <br/>
 
