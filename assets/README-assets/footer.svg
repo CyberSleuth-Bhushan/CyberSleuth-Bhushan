@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 60" width="850" height="60">
+  <defs>
+    <linearGradient id="footGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="20%" stop-color="#58a6ff" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#bc8cff" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#58a6ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="footText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#484f58"/>
+      <stop offset="50%" stop-color="#8b949e"/>
+      <stop offset="100%" stop-color="#484f58"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="8" width="850" height="1.5" rx="1" fill="url(#footGrad)"/>
+  <text x="425" y="40" text-anchor="middle" fill="url(#footText)" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="400" letter-spacing="1.5">
+    BUILDING, LEARNING, AND SHIPPING — ONE COMMIT AT A TIME
+  </text>
+</svg>
