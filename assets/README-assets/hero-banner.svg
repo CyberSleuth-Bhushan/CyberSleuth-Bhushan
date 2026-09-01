@@ -1,114 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 270" width="880" height="270">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 180" width="840" height="180">
   <defs>
-    <!-- Background Gradients -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0d12"/>
-      <stop offset="50%" stop-color="#111620"/>
-      <stop offset="100%" stop-color="#0d1117"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
-
-    <!-- Radial Glows -->
-    <radialGradient id="cyanGlow" cx="20%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="purpleGlow" cx="80%" cy="60%" r="60%">
-      <stop offset="0%" stop-color="#bc8cff" stop-opacity="0.25"/>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#58a6ff"/>
+      <stop offset="70%" stop-color="#bc8cff"/>
       <stop offset="100%" stop-color="#bc8cff" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Text Gradient -->
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#58a6ff"/>
-      <stop offset="40%" stop-color="#79c0ff"/>
-      <stop offset="75%" stop-color="#d2a8ff"/>
-      <stop offset="100%" stop-color="#58a6ff"/>
     </linearGradient>
-
-    <!-- Border Gradient -->
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#30363d" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0.8"/>
+    <linearGradient id="name" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="100%" stop-color="#c9d1d9"/>
     </linearGradient>
-
-    <!-- Grid Pattern -->
-    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#30363d" stroke-width="0.6" stroke-opacity="0.4"/>
-    </pattern>
   </defs>
 
-  <!-- Main Container -->
-  <rect width="880" height="270" rx="14" fill="url(#bgGrad)"/>
-  
-  <!-- Cyber Grid Pattern -->
-  <rect width="880" height="270" rx="14" fill="url(#cyberGrid)"/>
+  <rect width="840" height="180" fill="url(#bg)"/>
 
-  <!-- Ambient Light Orbs -->
-  <rect width="880" height="270" rx="14" fill="url(#cyanGlow)"/>
-  <rect width="880" height="270" rx="14" fill="url(#purpleGlow)"/>
+  <!-- Top accent -->
+  <rect y="0" width="840" height="2" fill="url(#accent)"/>
 
-  <!-- Border -->
-  <rect x="1" y="1" width="878" height="268" rx="13" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
-
-  <!-- Top Terminal Bar -->
-  <rect x="1" y="1" width="878" height="36" rx="13" fill="#161b22" fill-opacity="0.9"/>
-  <line x1="1" y1="37" x2="879" y2="37" stroke="#30363d" stroke-width="1"/>
-  
-  <!-- Window Controls -->
-  <circle cx="24" cy="19" r="5.5" fill="#ff5f56"/>
-  <circle cx="42" cy="19" r="5.5" fill="#ffbd2e"/>
-  <circle cx="60" cy="19" r="5.5" fill="#27c93f"/>
-
-  <!-- Terminal Title -->
-  <text x="440" y="23" text-anchor="middle" fill="#8b949e" font-family="'Fira Code', 'Courier New', monospace" font-size="12" font-weight="500" letter-spacing="1">
-    cybersleuth@bhushan: ~/profile/portfolio
+  <!-- Greeting -->
+  <text x="420" y="58" text-anchor="middle" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" letter-spacing="3">
+    HELLO, I'M
   </text>
 
-  <!-- GitHub Pro Badge Top Right -->
-  <g transform="translate(775, 9)">
-    <rect width="84" height="20" rx="10" fill="#1f6feb" fill-opacity="0.25" stroke="#388bfd" stroke-width="1"/>
-    <text x="42" y="14" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">&#9733; PRO USER</text>
-  </g>
-
-  <!-- Subtitle / Status Prefix -->
-  <g transform="translate(440, 74)">
-    <rect x="-110" y="-14" width="220" height="24" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <circle cx="-92" cy="-2" r="4" fill="#3fb950"/>
-    <text x="-80" y="2" fill="#7ee787" font-family="'Fira Code', monospace" font-size="11" font-weight="600" letter-spacing="1.2">READY TO COLLABORATE</text>
-  </g>
-
   <!-- Name -->
-  <text x="440" y="130" text-anchor="middle" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="0.5">
+  <text x="420" y="100" text-anchor="middle" fill="url(#name)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="700">
     Bhushan Barun Mallick
   </text>
 
   <!-- Tagline -->
-  <text x="440" y="168" text-anchor="middle" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="1.2">
-    Engineering Student &#8226; Full-Stack Developer &#8226; AI / ML &#8226; IoT &#8226; Cyber Sleuth
+  <text x="420" y="135" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="500" letter-spacing="1.5">
+    ENGINEERING STUDENT  |  DEVELOPER  |  BUILDER  |  PROBLEM SOLVER
   </text>
 
-  <!-- Category Pills / Badges -->
-  <g transform="translate(440, 208)">
-    <!-- Pill 1: TGPCET -->
-    <g transform="translate(-255, 0)">
-      <rect x="0" y="0" width="155" height="28" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="77" y="18" text-anchor="middle" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">&#127891; IT @ TGPCET</text>
-    </g>
-
-    <!-- Pill 2: Web & AI -->
-    <g transform="translate(-85, 0)">
-      <rect x="0" y="0" width="170" height="28" rx="14" fill="#161b22" stroke="#388bfd" stroke-width="1" stroke-opacity="0.6"/>
-      <text x="85" y="18" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">&#9889; Full-Stack &amp; AI Apps</text>
-    </g>
-
-    <!-- Pill 3: Location -->
-    <g transform="translate(100, 0)">
-      <rect x="0" y="0" width="155" height="28" rx="14" fill="#161b22" stroke="#bc8cff" stroke-width="1" stroke-opacity="0.6"/>
-      <text x="77" y="18" text-anchor="middle" fill="#d2a8ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">&#128205; Nagpur, India</text>
-    </g>
-  </g>
-
-  <!-- Bottom Accent Line -->
-  <line x1="120" y1="268" x2="760" y2="268" stroke="url(#borderGrad)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Bottom accent -->
+  <rect y="178" width="840" height="2" fill="url(#accent)"/>
 </svg>
