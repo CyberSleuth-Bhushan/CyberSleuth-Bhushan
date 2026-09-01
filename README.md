@@ -9,7 +9,7 @@
 
 <!-- HERO BANNER -->
 <a href="https://github.com/CyberSleuth-Bhushan">
-  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/hero-banner.svg?v=3" alt="Bhushan Barun Mallick — Engineering Student · Full-Stack Developer · AI/ML · IoT · Cyber Sleuth" width="100%"/>
+  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/hero-banner.svg?v=4" alt="Bhushan Barun Mallick — Engineering Student · Full-Stack Developer · AI/ML · IoT · Cyber Sleuth" width="100%"/>
 </a>
 
 <br/><br/>
