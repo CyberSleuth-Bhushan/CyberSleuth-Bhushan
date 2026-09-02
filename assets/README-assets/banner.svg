@@ -1,196 +1,177 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="100%" style="border-radius: 10px; overflow: hidden;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" width="880" height="200">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#080c14"/>
       <stop offset="50%" stop-color="#0d1117"/>
       <stop offset="100%" stop-color="#121824"/>
     </linearGradient>
 
-    <!-- Glowing Border Gradient -->
-    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.2"/>
+    <!-- Top & Bottom Border Accent -->
+    <linearGradient id="edgeAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.1"/>
       <stop offset="20%" stop-color="#388bfd"/>
       <stop offset="50%" stop-color="#39c5bb"/>
       <stop offset="80%" stop-color="#bc8cff"/>
-      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Center Ambient Radial Glow -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#080c14" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Node Glow -->
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Laser Sweep Gradient -->
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#58a6ff" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#39c5bb" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#58a6ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Text Name Gradient -->
-    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="35%" stop-color="#e6edf3"/>
       <stop offset="70%" stop-color="#a5d6ff"/>
       <stop offset="100%" stop-color="#d2a8ff"/>
     </linearGradient>
 
-    <!-- Laser Beam Gradient -->
-    <linearGradient id="scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#388bfd" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.6"/>
-      <stop offset="75%" stop-color="#39c5bb" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
-    </linearGradient>
-
     <!-- Grid Pattern -->
-    <pattern id="tech-grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#58a6ff" stroke-width="0.6" stroke-opacity="0.07"/>
-      <circle cx="30" cy="30" r="1" fill="#58a6ff" fill-opacity="0.15"/>
+    <pattern id="gridMatrix" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#58a6ff" stroke-width="0.5" stroke-opacity="0.07"/>
+      <circle cx="28" cy="28" r="0.8" fill="#58a6ff" fill-opacity="0.18"/>
     </pattern>
-
-    <!-- Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
     @keyframes pulseGlow {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 0.9; }
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 1; }
     }
     @keyframes scanline {
-      0% { transform: translateX(-920px); }
-      100% { transform: translateX(920px); }
+      0% { transform: translateX(-880px); }
+      100% { transform: translateX(880px); }
     }
     @keyframes dashMove {
-      0% { stroke-dashoffset: 40; }
+      0% { stroke-dashoffset: 36; }
       100% { stroke-dashoffset: 0; }
     }
     @keyframes blink {
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
-    @keyframes floatParticle {
-      0%, 100% { transform: translateY(0px); opacity: 0.3; }
-      50% { transform: translateY(-6px); opacity: 0.8; }
-    }
 
-    .pulse-node { animation: pulseGlow 3s ease-in-out infinite; }
-    .scan-beam { animation: scanline 5s linear infinite; }
-    .circuit-data { animation: dashMove 2s linear infinite; }
-    .cursor-blink { animation: blink 1s infinite; }
-    .particle-1 { animation: floatParticle 4s ease-in-out infinite; }
-    .particle-2 { animation: floatParticle 3.5s ease-in-out infinite 1s; }
+    .pulse { animation: pulseGlow 2.8s ease-in-out infinite; }
+    .scan { animation: scanline 5s linear infinite; }
+    .dash { animation: dashMove 2.2s linear infinite; }
+    .cursor { animation: blink 0.9s infinite; }
   </style>
 
-  <!-- Card Base Background -->
-  <rect width="920" height="220" rx="10" fill="url(#bg-grad)"/>
+  <!-- Background Base -->
+  <rect x="0" y="0" width="880" height="200" rx="8" fill="url(#bgGrad)"/>
 
-  <!-- Tech Grid Background -->
-  <rect width="920" height="220" rx="10" fill="url(#tech-grid)"/>
+  <!-- Matrix Grid -->
+  <rect x="0" y="0" width="880" height="200" rx="8" fill="url(#gridMatrix)"/>
 
-  <!-- Ambient Center Glow Spot -->
-  <ellipse cx="460" cy="110" rx="280" ry="80" fill="#388bfd" opacity="0.06" filter="url(#glow)"/>
+  <!-- Ambient Center Glow Aura -->
+  <ellipse cx="440" cy="100" rx="300" ry="75" fill="url(#centerGlow)"/>
 
   <!-- Top Accent Bar -->
-  <rect x="0" y="0" width="920" height="3" fill="url(#border-grad)"/>
+  <rect x="0" y="0" width="880" height="2.5" fill="url(#edgeAccent)"/>
   
   <!-- Bottom Accent Bar -->
-  <rect x="0" y="217" width="920" height="3" fill="url(#border-grad)"/>
+  <rect x="0" y="197.5" width="880" height="2.5" fill="url(#edgeAccent)"/>
 
   <!-- Scanning Laser Beam -->
-  <g class="scan-beam">
-    <rect x="0" y="0" width="300" height="220" fill="url(#scan-grad)" opacity="0.25"/>
+  <g class="scan">
+    <rect x="0" y="0" width="280" height="200" fill="url(#laserBeam)"/>
   </g>
 
-  <!-- Left Side Circuit Vector Lines -->
-  <g opacity="0.6">
-    <path d="M 15 110 L 85 110 L 120 75 L 170 75" fill="none" stroke="#30363d" stroke-width="1.5"/>
-    <path d="M 15 110 L 85 110 L 120 75 L 170 75" fill="none" stroke="#388bfd" stroke-width="1.5" stroke-dasharray="6 12" class="circuit-data"/>
-    <circle cx="15" cy="110" r="3.5" fill="#388bfd" filter="url(#soft-glow)"/>
-    <circle cx="170" cy="75" r="3" fill="#39c5bb" class="pulse-node" filter="url(#soft-glow)"/>
+  <!-- Left Circuit Vectors -->
+  <g opacity="0.65">
+    <path d="M 16 100 L 75 100 L 105 68 L 155 68" fill="none" stroke="#21262d" stroke-width="1.5"/>
+    <path d="M 16 100 L 75 100 L 105 68 L 155 68" fill="none" stroke="#388bfd" stroke-width="1.5" stroke-dasharray="6 10" class="dash"/>
+    <circle cx="16" cy="100" r="3" fill="#388bfd"/>
+    <circle cx="155" cy="68" r="3" fill="#39c5bb" class="pulse"/>
 
-    <path d="M 30 160 L 95 160 L 135 125 L 160 125" fill="none" stroke="#30363d" stroke-width="1.2"/>
-    <circle cx="30" cy="160" r="2.5" fill="#bc8cff"/>
-    <circle cx="160" cy="125" r="2.5" fill="#58a6ff"/>
+    <path d="M 28 145 L 85 145 L 120 115 L 145 115" fill="none" stroke="#21262d" stroke-width="1.2"/>
+    <circle cx="28" cy="145" r="2.5" fill="#bc8cff"/>
+    <circle cx="145" cy="115" r="2.5" fill="#58a6ff"/>
   </g>
 
-  <!-- Right Side Circuit Vector Lines -->
-  <g opacity="0.6">
-    <path d="M 905 110 L 835 110 L 800 145 L 750 145" fill="none" stroke="#30363d" stroke-width="1.5"/>
-    <path d="M 905 110 L 835 110 L 800 145 L 750 145" fill="none" stroke="#bc8cff" stroke-width="1.5" stroke-dasharray="6 12" class="circuit-data"/>
-    <circle cx="905" cy="110" r="3.5" fill="#bc8cff" filter="url(#soft-glow)"/>
-    <circle cx="750" cy="145" r="3" fill="#388bfd" class="pulse-node" filter="url(#soft-glow)"/>
+  <!-- Right Circuit Vectors -->
+  <g opacity="0.65">
+    <path d="M 864 100 L 805 100 L 775 132 L 725 132" fill="none" stroke="#21262d" stroke-width="1.5"/>
+    <path d="M 864 100 L 805 100 L 775 132 L 725 132" fill="none" stroke="#bc8cff" stroke-width="1.5" stroke-dasharray="6 10" class="dash"/>
+    <circle cx="864" cy="100" r="3" fill="#bc8cff"/>
+    <circle cx="725" cy="132" r="3" fill="#388bfd" class="pulse"/>
 
-    <path d="M 890 60 L 825 60 L 785 95 L 760 95" fill="none" stroke="#30363d" stroke-width="1.2"/>
-    <circle cx="890" cy="60" r="2.5" fill="#39c5bb"/>
-    <circle cx="760" cy="95" r="2.5" fill="#58a6ff"/>
+    <path d="M 852 55 L 795 55 L 760 85 L 735 85" fill="none" stroke="#21262d" stroke-width="1.2"/>
+    <circle cx="852" cy="55" r="2.5" fill="#39c5bb"/>
+    <circle cx="735" cy="85" r="2.5" fill="#58a6ff"/>
   </g>
 
-  <!-- Corner Telemetry HUD Markers -->
+  <!-- Corner HUD Markers -->
   <!-- Top Left -->
-  <text x="24" y="24" fill="#58a6ff" font-family="'Fira Code', Consolas, monospace" font-size="10" font-weight="600" opacity="0.75" letter-spacing="1">
+  <text x="22" y="22" fill="#58a6ff" font-family="'Fira Code', Consolas, monospace" font-size="9.5" font-weight="600" opacity="0.75" letter-spacing="1">
     [ SYS :: 0x424D ]
   </text>
   <!-- Top Right -->
-  <text x="896" y="24" text-anchor="end" fill="#58a6ff" font-family="'Fira Code', Consolas, monospace" font-size="10" font-weight="600" opacity="0.75" letter-spacing="1">
+  <text x="858" y="22" text-anchor="end" fill="#58a6ff" font-family="'Fira Code', Consolas, monospace" font-size="9.5" font-weight="600" opacity="0.75" letter-spacing="1">
     [ LOC :: 21.14°N 79.08°E ]
   </text>
   <!-- Bottom Left -->
-  <g transform="translate(24, 202)">
-    <circle cx="4" cy="-4" r="3" fill="#39c5bb" class="pulse-node" filter="url(#soft-glow)"/>
-    <text x="14" y="0" fill="#39c5bb" font-family="'Fira Code', Consolas, monospace" font-size="10" font-weight="600" opacity="0.85" letter-spacing="1">
+  <g transform="translate(22, 184)">
+    <circle cx="3" cy="-3" r="2.5" fill="#39c5bb" class="pulse"/>
+    <text x="12" y="0" fill="#39c5bb" font-family="'Fira Code', Consolas, monospace" font-size="9.5" font-weight="600" opacity="0.85" letter-spacing="1">
       SYS_ONLINE
     </text>
   </g>
   <!-- Bottom Right -->
-  <text x="896" y="202" text-anchor="end" fill="#bc8cff" font-family="'Fira Code', Consolas, monospace" font-size="10" font-weight="600" opacity="0.75" letter-spacing="1">
+  <text x="858" y="184" text-anchor="end" fill="#bc8cff" font-family="'Fira Code', Consolas, monospace" font-size="9.5" font-weight="600" opacity="0.75" letter-spacing="1">
     [ STACK :: FULL-STACK + IOT ]
   </text>
 
-  <!-- HUD Corner Bracket Accents -->
-  <!-- Top Left Bracket -->
-  <path d="M 16 35 L 16 16 L 35 16" fill="none" stroke="#58a6ff" stroke-width="1.5" opacity="0.5"/>
-  <!-- Top Right Bracket -->
-  <path d="M 904 35 L 904 16 L 885 16" fill="none" stroke="#58a6ff" stroke-width="1.5" opacity="0.5"/>
-  <!-- Bottom Left Bracket -->
-  <path d="M 16 185 L 16 204 L 35 204" fill="none" stroke="#58a6ff" stroke-width="1.5" opacity="0.5"/>
-  <!-- Bottom Right Bracket -->
-  <path d="M 904 185 L 904 204 L 885 204" fill="none" stroke="#58a6ff" stroke-width="1.5" opacity="0.5"/>
+  <!-- Corner Brackets -->
+  <path d="M 14 30 L 14 14 L 30 14" fill="none" stroke="#58a6ff" stroke-width="1.2" opacity="0.45"/>
+  <path d="M 866 30 L 866 14 L 850 14" fill="none" stroke="#58a6ff" stroke-width="1.2" opacity="0.45"/>
+  <path d="M 14 170 L 14 186 L 30 186" fill="none" stroke="#58a6ff" stroke-width="1.2" opacity="0.45"/>
+  <path d="M 866 170 L 866 186 L 850 186" fill="none" stroke="#58a6ff" stroke-width="1.2" opacity="0.45"/>
 
-  <!-- Floating Tech Data Nodes -->
-  <circle cx="210" cy="50" r="1.5" fill="#58a6ff" class="particle-1"/>
-  <circle cx="710" cy="170" r="1.5" fill="#39c5bb" class="particle-2"/>
-  <circle cx="260" cy="180" r="2" fill="#bc8cff" class="particle-1"/>
-  <circle cx="670" cy="45" r="2" fill="#58a6ff" class="particle-2"/>
+  <!-- ================= BANNER CONTENT ================= -->
 
-  <!-- ================= HEADER CONTENT ================= -->
-
-  <!-- Monospace Greeting Line with Terminal Prompt -->
-  <g transform="translate(460, 58)">
-    <text text-anchor="middle" fill="#39c5bb" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="13" font-weight="600" letter-spacing="3">
-      &lt; HELLO WORLD /&gt;&#160;&#160;I'M
+  <!-- Top Prompt Line -->
+  <g transform="translate(440, 52)">
+    <text text-anchor="middle" fill="#39c5bb" font-family="'Fira Code', Consolas, monospace" font-size="12" font-weight="600" letter-spacing="3">
+      &lt; HELLO WORLD /&gt;  I'M
     </text>
-    <rect x="112" y="-10" width="7" height="13" fill="#58a6ff" class="cursor-blink"/>
+    <rect x="98" y="-9" width="6.5" height="12" fill="#58a6ff" class="cursor"/>
   </g>
 
   <!-- Main Name Title -->
-  <text x="460" y="112" text-anchor="middle" fill="url(#name-grad)" font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="40" font-weight="800" letter-spacing="0.5" filter="url(#glow)">
+  <text x="440" y="102" text-anchor="middle" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="0.5">
     Bhushan Barun Mallick
   </text>
 
-  <!-- Tech Roles & Domain Tagline -->
-  <g transform="translate(460, 154)">
-    <text text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" letter-spacing="1.8">
+  <!-- Subtitle Tagline -->
+  <g transform="translate(440, 142)">
+    <text text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="1.5">
       <tspan fill="#8b949e">ENGINEERING STUDENT</tspan>
-      <tspan fill="#388bfd" font-weight="800"> &nbsp;•&nbsp; </tspan>
+      <tspan fill="#388bfd" font-weight="800">  &#8226;  </tspan>
       <tspan fill="#58a6ff">FULL-STACK DEVELOPER</tspan>
-      <tspan fill="#39c5bb" font-weight="800"> &nbsp;•&nbsp; </tspan>
+      <tspan fill="#39c5bb" font-weight="800">  &#8226;  </tspan>
       <tspan fill="#a5d6ff">IOT &amp; AI BUILDER</tspan>
-      <tspan fill="#bc8cff" font-weight="800"> &nbsp;•&nbsp; </tspan>
+      <tspan fill="#bc8cff" font-weight="800">  &#8226;  </tspan>
       <tspan fill="#d2a8ff">PROBLEM SOLVER</tspan>
     </text>
   </g>

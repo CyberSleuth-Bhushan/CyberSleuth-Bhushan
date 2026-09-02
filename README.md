@@ -9,7 +9,7 @@
 
 <!-- HERO BANNER -->
 <a href="https://github.com/CyberSleuth-Bhushan">
-  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/banner.svg" alt="Bhushan Barun Mallick — Engineering Student · Developer · Builder · Problem Solver" width="100%"/>
+  <img src="https://raw.githubusercontent.com/CyberSleuth-Bhushan/CyberSleuth-Bhushan/main/assets/README-assets/banner.svg?v=2" alt="Bhushan Barun Mallick — Engineering Student · Developer · Builder · Problem Solver" width="100%"/>
 </a>
 
 <br/><br/>
